@@ -25,6 +25,9 @@
 }
 
 /* Body */
+body{
+    background-color: rgb(55, 59, 112);
+}
 
 /* Header */
 header {
