@@ -29,6 +29,13 @@ body {
     background-color: rgb(55, 59, 112);
 }
 
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 /* Header */
 header {
     border-radius: 10px;
@@ -90,6 +97,7 @@ footer {
     color: aliceblue;
     padding: 10px;
     font-size: 0.9rem;
+    margin-top: 20px;
 }
 
 a {
@@ -129,9 +137,11 @@ a:active {
 .sidenav a:hover {
     color: #f1f1f1;
 }
-.sidenav a:active{
+
+.sidenav a:active {
     color: #393939;
 }
+
 .main {
     margin-left: 200px;
     /* Same as the width of the sidenav */
@@ -145,4 +155,47 @@ a:active {
     .sidenav a {
         font-size: 18px;
     }
+}
+
+.div1 {
+    width: 50px;
+    height: 50px;
+    background-color: #000000ad;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+}
+
+.sidenav h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
+
+.sidenav a:hover {
+    background-color: #555;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.content iframe {
+    width: 100%;
+    height: calc(100% - 40px);
 }
