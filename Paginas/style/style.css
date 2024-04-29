@@ -162,6 +162,8 @@ a:active {
     min-height: 50px;
     color: aliceblue;
     background-color: #000000ad;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .sidenav {
@@ -185,10 +187,18 @@ a:active {
     font-size: 18px;
     color: #fff;
     display: block;
+    transition: 0.5s;
 }
 
 .sidenav a:hover {
     background-color: #555;
+    font-size: 1.25rem;
+}
+
+.sidenav a:active {
+    background-color: #bbbbbb;
+    font-size: 1.25rem;
+    color: #111;
 }
 
 .content {
@@ -199,4 +209,14 @@ a:active {
 .content iframe {
     width: 100%;
     height: calc(100% - 40px);
+}
+
+.divex{
+    margin: 10px 0 0 3%;
+    width: 50px;
+    height: 50px;
+    background-color: #ed0000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
