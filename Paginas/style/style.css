@@ -1,8 +1,8 @@
 * {
     padding: 0px;
     margin: 0px;
-    scrollbar-width: thin;
-    scrollbar-color: blue rgba(255, 166, 0, 0);
+    /* scrollbar-width: thin;
+    scrollbar-color: blue rgba(255, 166, 0, 0); */
     box-sizing: border-box;
 
     font-family: "Playfair Display", serif;
@@ -19,7 +19,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: blue;
+    background-color: rgb(81, 81, 81);
     border-radius: 20px;
     border: 3px solid rgba(255, 166, 0, 0);
 }
@@ -159,14 +159,14 @@ a:active {
 
 .div1 {
     min-width: 50px;
-    min-height: 50px;
+    min-height: 50px; 
     color: aliceblue;
     background-color: #000000ad;
     padding: 15px;
     border-radius: 10px;
 }
-
-.sidenav {
+  
+  .sidenav {
     height: 100%;
     width: 250px;
     position: fixed;
@@ -174,42 +174,37 @@ a:active {
     left: 0;
     background-color: #111;
     padding-top: 20px;
-}
-
-.sidenav h2 {
+  }
+  
+  .sidenav h2 {
     color: #fff;
     text-align: center;
-}
-
-.sidenav a {
+  }
+  
+  .sidenav a {
     padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
     color: #fff;
     display: block;
-    transition: 0.5s;
-}
-
-.sidenav a:hover {
+  }
+  
+  .sidenav a:hover {
     background-color: #555;
-    font-size: 1.25rem;
-}
-
-.sidenav a:active {
-    background-color: #bbbbbb;
-    font-size: 1.25rem;
-    color: #111;
-}
-
-.content {
+  }
+  
+  .content {
     margin-left: 250px;
-    padding: 20px;
-}
-
-.content iframe {
+    padding: 0;
+    height: 100%;
+    overflow: auto; 
+  }
+  
+  .content iframe {
     width: 100%;
-    height: calc(100% - 40px);
-}
+    height: 100%;
+    border: none;
+  }
 
 .divex{
     margin: 10px 0 0 3%;
