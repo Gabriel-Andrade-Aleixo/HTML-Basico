@@ -97,7 +97,9 @@ footer {
     color: aliceblue;
     padding: 10px;
     font-size: 0.9rem;
-    margin-top: 20px;
+    /* margin-top: 20px; */    
+    width: 80%;
+    border-radius: 10px;
 }
 
 a {
@@ -158,12 +160,14 @@ a:active {
 }
 
 .div1 {
+    margin-top: 15px;
     min-width: 50px;
     min-height: 50px; 
     color: aliceblue;
     background-color: #000000ad;
     padding: 15px;
     border-radius: 10px;
+    margin: 20px;
 }
   
   .sidenav {
@@ -207,11 +211,20 @@ a:active {
   }
 
 .divex{
-    margin: 10px 0 0 3%;
-    width: 50px;
-    height: 50px;
-    background-color: #ed0000;
+    padding: 5px;
+    margin: 10px auto;
+    width: 90%;
+    min-height: 50px;
+    background-color: #ffffffc7;
     justify-content: center;
+    color: #111;
     align-items: center;
-    display: flex;
+    display: block;
+    border-radius: 10px;
+}
+.classex{
+    color: rgb(0, 0, 0);
+}
+b{
+    color: rgb(15, 44, 188);
 }
