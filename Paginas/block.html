@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICO</title>
+    <link rel="stylesheet" href="./Paginas/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://bs.googleapis.com">
+    <link rel="preconnect" href="https://bs.gstatic.com" crossorigin>
+    <link href="https://bs.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="div1">
+        <h1>Elementos em nível de bloco</h1>
+        <p>
+            Um elemento em nível de bloco sempre começa em uma nova linha e os navegadores adicionam automaticamente
+            algum espaço (uma margem) antes e depois do elemento. <br>
+            <br>
+            Um elemento de nível de bloco sempre ocupa toda a largura disponível (estende-se para a esquerda e para a
+            direita tanto quanto possível).
+            <br><br>
+            Dois elementos de bloco comumente usados ​​são: &ltp> e &ltdiv>.
+            <br><br>
+            O &ltp>elemento define um parágrafo em um documento HTML.
+            <br><br>
+            O &ltdiv>elemento define uma divisão ou seção em um documento HTML.
+        </p>
+        <br>
+        <hr><br>
+        <h1>O elemento &ltdiv></h1>
+        <p>
+            O &ltdiv>elemento é frequentemente usado como contêiner para outros elementos HTML.
+            <br><br>
+            O &ltdiv>elemento não possui atributos obrigatórios, mas style, classe idsão comuns.
+            <br><br>
+            Quando usado junto com CSS, o &ltdiv>elemento pode ser usado para estilizar blocos de conteúdo:
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <b>&ltdiv style="background-color:black;color:white;padding:20px;"></b><br>
+                <b>&lth2></b>London <b>&lt/h2></b><br>
+                <b>&ltp></b>London is the capital city of England. It is the most populous city in the United Kingdom,
+                with a metropolitan area of over 13 million inhabitants. <b>&lt/p></b><br>
+                <b>&lt/div></b><br>
+            </div>
+            Execução:
+            <div class="divex">
+                <div style="background-color:black;color:white;padding:20px;">
+                    <h2>London</h2>
+                    <p>
+                        London is the capital city of England. It is the most populous city in the United Kingdom, with
+                        a
+                        metropolitan area of over 13 million inhabitants.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h1>O elemento &ltspan></h1>
+        <p>
+            O &ltspan>elemento é um contêiner embutido usado para marcar uma parte de um texto ou parte de um documento.
+            <br><br>
+            O &ltspan>elemento não possui atributos obrigatórios, mas style, classe idsão comuns.
+            <br><br>
+            Quando usado junto com CSS, o &ltspan>elemento pode ser usado para estilizar partes do texto:
+        </p><br>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <b>&ltp></b>My mother has <b>&ltspan style="color:blue;font-weight:bold;"></b>blue<b>&lt/span></b> eyes and my father has <b>&ltspan style="color:darkolivegreen;font-weight:bold;"></b>dark green<b>&lt/span></b> eyes.<b>&lt/p></b>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <footer>
+            Este site é apenas informacional, contendo apenas informações basicas sobre HTML.
+            <br>
+            Todas as informações deste site foram tiradas do site <a href="https://www.w3schools.com">W3 Schools</a>.
+        </footer>
+    </div>
+</body>
+
+</html>

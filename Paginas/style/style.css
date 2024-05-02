@@ -237,6 +237,6 @@ b {
     color: rgb(15, 44, 188);
 }
 
-ul {
+ul, ol {
     margin-left: 20px;
 }

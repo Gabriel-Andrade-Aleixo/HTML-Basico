@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICO</title>
+    <link rel="stylesheet" href="./Paginas/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://bs.googleapis.com">
+    <link rel="preconnect" href="https://bs.gstatic.com" crossorigin>
+    <link href="https://bs.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <div class="div1">
+        <h1>Tabelas HTML</h1>
+        <p>As tabelas HTML permitem que os desenvolvedores da web organizem os dados em linhas e colunas.</p>
+        <br>
+        <hr><br>
+        <h1>Definir uma tabela HTML</h1>
+        <p>Uma tabela em HTML consiste em células de tabela dentro de linhas e colunas.</p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <p>Uma tabela HTML simples:</p>
+            <div class="divex">
+                <b>&lttable></b><br>
+                <b>&lttr></b><br>
+                <b>&ltth></b>Company<b>&lt/th></b><br>
+                <b>&ltth></b>Contact<b>&lt/th></b><br>
+                <b>&ltth></b>Country<b>&lt/th></b><br>
+                <b>&lt/tr></b><br>
+                <b>&lttr></b><br>
+                <b>&lttd></b>Alfreds Futterkiste<b>&lt/td></b><br>
+                <b>&lttd></b>Maria Anders<b>&lt/td></b><br>
+                <b>&lttd></b>Germany<b>&lt/td></b><br>
+                <b>&lt/tr></b><br>
+                <b>&lttr></b><br>
+                <b>&lttd></b>Centro comercial Moctezuma<b>&lt/td></b><br>
+                <b>&lttd></b>Francisco Chang<b>&lt/td></b><br>
+                <b>&lttd></b>Mexico<b>&lt/td></b><br>
+                <b>&lt/tr></b><br>
+                <b>&lt/table></b><br>
+            </div>
+            Execução:
+            <div class="divex">
+                <table>
+                    <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h1>Células de tabela</h1>
+        <p>Cada célula da tabela é definida por um <td>e uma </td>tag.</p><br>
+        <p>Tudo entre <td>e </td>é o conteúdo da célula da tabela.</p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <b>&ltstyle></b><br>
+                table,<br>
+                th,<br>
+                td {<br>
+                border: 1px solid black;<br>
+                }br
+                <b>&lt/style></b><br>
+                <br>
+                <b>&ltbody></b><br>
+                <br>
+                <b>&lth2></b>TD elements define table cells<b>&lt/h2></b><br>
+                <br>
+                <b>&lttable </b>style="width:100%"><br>
+                <b>&lttr></b><br>
+                <b>&lttd></b>Emil<b>&lt/td></b><br>
+                <b>&lttd></b>Tobias<b>&lt/td></b><br>
+                <b>&lttd></b>Linus<b>&lt/td></b><br>
+                <b>&lt/tr></b><br>
+                <b>&lt/table></b>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <table>
+                    <tr>
+                        <td>Emil</td>
+                        <td>Tobias</td>
+                        <td>Linus</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h1>Dicas:</h1>
+        <p>Uma célula de tabela pode conter todos os tipos de elementos HTML: texto, imagens, listas, links, outras tabelas, etc.</p>
+        <hr><br>
+        <p>tr significa linha da tabela.</p>
+        <hr><br>
+        <p>Você pode ter quantas linhas quiser em uma tabela; apenas certifique-se de que o número de células seja o mesmo em cada linha.
+        </p>
+        <hr><br>
+        <p>Há momentos em que uma linha pode ter menos ou mais células que outra. Você aprenderá sobre isso em um capítulo posterior.</p>
+        <hr>
+        <p>th significa cabeçalho da tabela.</p>
+    </div>
+    <div class="main">
+        <footer>
+            Este site é apenas informacional, contendo apenas informações basicas sobre HTML.
+            <br>
+            Todas as informações deste site foram tiradas do site <a href="https://www.w3schools.com">W3 Schools</a>.
+        </footer>
+    </div>
+</body>
+
+</html>

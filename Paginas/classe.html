@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICO</title>
+    <link rel="stylesheet" href="./Paginas/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://bs.googleapis.com">
+    <link rel="preconnect" href="https://bs.gstatic.com" crossorigin>
+    <link href="https://bs.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .city {
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <div class="div1">
+        <h1>Atributo de classe HTML</h1>
+        <p>
+            O atributo HTML classé usado para especificar uma classe para um elemento HTML.
+            <br><br>
+            Vários elementos HTML podem compartilhar a mesma classe.
+        </p>
+        <br>
+        <hr><br>
+        <h1>Usando o atributo class</h1>
+        <p>
+            O classatributo é frequentemente usado para apontar para um nome de classe em uma folha de estilo. Também
+            pode ser usado por JavaScript para acessar e manipular elementos com o nome de classe específico.
+            <br><br>
+            No exemplo a seguir temos três &ltdiv>elementos com um classatributo com o valor “cidade”. Todos os três
+            &ltdiv> elementos serão estilizados igualmente de acordo com a .city definição de estilo na seção principal:
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <b>&lt!DOCTYPE html></b><br>
+                <b>&lthtml></b><br>
+                <b>&lthead></b><br>
+                <b>&ltstyle><br>
+                    .city {<br>
+                    background-color: tomato;<br>
+                    color: white;<br>
+                    border: 2px solid black;<br>
+                    margin: 20px;<br>
+                    padding: 20px;<br>
+                    }<br>
+                    &lt/style></b><br>
+                <b>&lt/head></b><br>
+                <b>&ltbody></b><br>
+                <br>
+                <b>&ltdiv class="city"></b><br>
+                <b>&lth2></b>London<b>&lt/h2></b><br>
+                <b>&ltp></b>London is the capital of England.<b>&lt/p></b><br>
+                <b>&lt/div></b><br>
+                <br>
+                <b>&ltdiv class="city"></b><br>
+                <b>&lth2></b>Paris<b>&lt/h2></b><br>
+                <b>&ltp></b>Paris is the capital of France.<b>&lt/p></b><br>
+                <b>&lt/div></b><br>
+                <br>
+                <b>&ltdiv class="city"></b><br>
+                <b>&lth2></b>Tokyo<b>&lt/h2></b><br>
+                <b>&ltp></b>Tokyo is the capital of Japan.<b>&lt/p></b><br>
+                <b>&lt/div></b><br>
+                <br>
+                <b>&lt/body></b><br>
+                <b>&lt/html></b>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <div class="city">
+                    <h2>London</h2>
+                    <p>London is the capital of England.</p>
+                </div>
+
+                <div class="city">
+                    <h2>Paris</h2>
+                    <p>Paris is the capital of France.</p>
+                </div>
+
+                <div class="city">
+                    <h2>Tokyo</h2>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+            </div>
+        </div>
+        <h1>A sintaxe da classe</h1>
+        <p>Para criar uma classe; escreva um ponto final (.), seguido por um nome de classe. Em seguida, defina as
+            propriedades CSS entre chaves {}:</p>
+        <br>
+        <hr><br>
+        <h1>Diferentes elementos podem compartilhar a mesma classe</h1>
+        <p>
+            Diferentes elementos HTML podem apontar para o mesmo nome de classe.
+            <br><br>
+            No exemplo a seguir, ambos &lth2>e &ltp> apontam para a classe "cidade" e compartilharão o mesmo
+            estilo:
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>&lth2 class="city"></b>Paris<b>&lt/h2></b><br>
+                    <b>&ltp class="city"></b>Paris is the capital of France<b>&lt/p></b><br>
+                </p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <h2 class="city">Paris</h2>
+                <p class="city">Paris is the capital of France</p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <footer>
+            Este site é apenas informacional, contendo apenas informações basicas sobre HTML.
+            <br>
+            Todas as informações deste site foram tiradas do site <a href="https://www.w3schools.com">W3 Schools</a>.
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICO</title>
+    <link rel="stylesheet" href="./Paginas/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://bs.googleapis.com">
+    <link rel="preconnect" href="https://bs.gstatic.com" crossorigin>
+    <link href="https://bs.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="div1">
+        <h1>Cotação HTML e elementos de citação</h1>
+        <br>
+        <hr>
+        <br>
+        <h1>HTML &ltblockquote> para cotações</h1>
+        <p>
+            O elemento HTML &ltblockquote>define uma seção citada de outra fonte.
+            <br><br>
+            Os navegadores geralmente recuam &ltblockquote>elementos.
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>&ltp></b>Here is a quote from WWF's website: <b>&lt/p></b>
+                    <br>
+                    <b>&ltblockquote cite="http://www.worldwildlife.org/who/index.html"></b>
+                    <br>
+                    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation
+                    organization, WWF works in nearly 100 countries. At every level, we collaborate with people around
+                    the world to develop and deliver innovative solutions that protect communities, wildlife, and the
+                    places in which they live.
+                    <br>
+                    <b>&lt/blockquote></b>
+                </p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <p>Here is a quote from WWF's website:</p>
+                <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation
+                    organization, WWF works in nearly 100 countries. At every level, we collaborate with people around
+                    the world to develop and deliver innovative solutions that protect communities, wildlife, and the
+                    places in which they live.
+                </blockquote>
+            </div>
+        </div>
+        <h1>HTML &ltq> para citações curtas</h1>
+        <p>
+            A tag HTML &ltq>define uma citação curta.
+            <br>
+            <br>
+            Os navegadores normalmente inserem aspas ao redor da citação.
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>&ltp></b> WWF's goal is to: <b>&ltq></b> Build a future where people live in harmony with nature.
+                    <b>&lt/q></b> <b>&lt/p></b>
+                </p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+            </div>
+        </div>
+        <h1>HTML &ltabbr> para abreviações</h1>
+        <p>
+            A tag HTML &ltabbr>define uma abreviatura ou um acrônimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+            <br>
+            <br>
+            A marcação de abreviaturas pode fornecer informações úteis aos navegadores, sistemas de tradução e motores
+            de busca.
+        </p>
+
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>&ltp></b> The <b>&ltabbr title="World Health Organization"></b> WHO <b>&lt/abbr></b> was founded
+                    in 1948. <b>&lt/p></b>
+                </p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+            </div>
+        </div>
+        <h1>HTML &ltaddress> para informações de contato</h1>
+        <p>
+            A tag HTML &ltaddress>define as informações de contato do autor/proprietário de um documento ou artigo.
+            <br><br>
+            As informações de contato podem ser endereço de e-mail, URL, endereço físico, número de telefone,
+            identificador de mídia social, etc.
+            <br><br>
+            O texto no &ltaddress>elemento geralmente é renderizado em itálico e os navegadores sempre adicionam uma
+            quebra de linha antes e depois do &ltaddress>elemento.
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>&ltaddress></b><br>
+                    Written by John Doe.<b>&ltbr></b><br>
+                    Visit us at:<b>&ltbr></b><br>
+                    Example.com<b>&ltbr></b><br>
+                    Box 564, Disneyland<b>&ltbr></b><br>
+                    USA <br>
+                    <b>&lt/address></b>
+                </p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <address>
+                    Written by John Doe.<br>
+                    Visit us at:<br>
+                    Example.com<br>
+                    Box 564, Disneyland<br>
+                    USA
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <footer>
+            Este site é apenas informacional, contendo apenas informações basicas sobre HTML.
+            <br>
+            Todas as informações deste site foram tiradas do site <a href="https://www.w3schools.com">W3 Schools</a>.
+        </footer>
+    </div>
+</body>
+
+</html>

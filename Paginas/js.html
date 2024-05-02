@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICO</title>
+    <link rel="stylesheet" href="./Paginas/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://bs.googleapis.com">
+    <link rel="preconnect" href="https://bs.gstatic.com" crossorigin>
+    <link href="https://bs.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="div1">
+        <h1>HTMLJavaScript</h1>
+        <p>
+            JavaScript torna as páginas HTML mais dinâmicas e interativas.
+        </p>
+        <br>
+        <hr><br>
+        <h1>A tag HTML &ltscript></h1>
+        <p>
+            A tag HTML &ltscript>é usada para definir um script do lado do cliente (JavaScript).
+            <br><br>
+            O &ltscript>elemento contém instruções de script ou aponta para um arquivo de script externo por meio do
+            srcatributo.
+            <br><br>
+            Os usos comuns do JavaScript são manipulação de imagens, validação de formulários e alterações dinâmicas de
+            conteúdo.
+            <br><br>
+            Para selecionar um elemento HTML, o JavaScript geralmente usa o document.getElementById()método.
+            <br><br>
+            Este exemplo de JavaScript escreve "Olá JavaScript!" em um elemento HTML com id="demo":
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>&lth2></b>Use JavaScript to Change Text<b>&lt/h2></b><br>
+                    <b>&ltp></b>This example writes "Hello JavaScript!" into an HTML element with
+                    id="demo":<b>&lt/p></b><br>
+                    <br>
+                    <b>&ltp id="demo"></b><b>&lt/p></b><br>
+                    <br>
+                    <b>&ltscript></b><br>
+                    document.getElementById("demo").innerHTML = "Hello JavaScript!";<br>
+                    <b>&lt/script></b> <br>
+                </p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <h2>Use JavaScript to Change Text</h2>
+                <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+                <p id="demo"></p>
+
+                <script>
+                    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+                </script>
+            </div>
+        </div>
+        <br>
+        <hr><br>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <b>&lth1></b>My First JavaScript<b>&lt/h1></b><br>
+                <b>&ltp></b>Here, a JavaScript changes the value of the src (source) attribute of an
+                image.<b>&lt/p></b><br>
+                <br>
+                <b>&ltscript></b><br>
+                function light(sw) {<br>
+                var pic;<br>
+                if (sw == 0) {<br>
+                pic = "./style/img/pic_bulboff.gif"<br>
+                } else {<br>
+                pic = "./style/img/pic_bulbon.gif"<br>
+                }<br>
+                document.getElementById('myImage').src = pic;<br>
+                }<br>
+                <b>&lt/script></b><br>
+                <br>
+                <b>&ltimg id="myImage" src="./style/img/pic_bulboff.gif" width="100" height="180"></b><br>
+                <br>
+                <b>&ltp></b><br>
+                <b>&ltbutton type="button" onclick="light(1)"></b>Light On<b>&lt/button></b><br>
+                <b>&ltbutton type="button" onclick="light(0)"></b>Light Off<b>&lt/button></b><br>
+                <b>&lt/p></b><br>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <h1>My First JavaScript</h1>
+                <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+                <script>
+                    function light(sw) {
+                        var pic;
+                        if (sw == 0) {
+                            pic = "./style/img/pic_bulboff.gif"
+                        } else {
+                            pic = "./style/img/pic_bulbon.gif"
+                        }
+                        document.getElementById('myImage').src = pic;
+                    }
+                </script>
+
+                <img id="myImage" src="./style/img/pic_bulboff.gif" width="100" height="180">
+
+                <p>
+                    <button type="button" onclick="light(1)">Light On</button>
+                    <button type="button" onclick="light(0)">Light Off</button>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="main">
+        <footer>
+            Este site é apenas informacional, contendo apenas informações basicas sobre HTML.
+            <br>
+            Todas as informações deste site foram tiradas do site <a href="https://www.w3schools.com">W3 Schools</a>.
+        </footer>
+    </div>
+</body>
+
+</html>

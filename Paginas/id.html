@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICO</title>
+    <link rel="stylesheet" href="./Paginas/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://bs.googleapis.com">
+    <link rel="preconnect" href="https://bs.gstatic.com" crossorigin>
+    <link href="https://bs.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    #myHeader {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .city {
+        background-color: tomato;
+        color: white;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div class="div1">
+        <h1>Atributo de identificação HTML</h1>
+        <p>
+            O atributo HTML idé usado para especificar um ID exclusivo para um elemento HTML.
+            <br><br>
+            Você não pode ter mais de um elemento com o mesmo id em um documento HTML.
+        </p>
+        <br>
+        <hr><br>
+        <h1>Usando o atributo id</h1>
+        <p>
+            O idatributo especifica um ID exclusivo para um elemento HTML. O valor do id atributo deve ser exclusivo no
+            documento HTML.
+            <br><br>
+            O idatributo é usado para apontar para uma declaração de estilo específica em uma folha de estilos. Também é
+            usado por JavaScript para acessar e manipular o elemento com o id específico.
+            <br><br>
+            A sintaxe para id é: escreva um caractere hash (#), seguido por um nome de id. Em seguida, defina as
+            propriedades CSS entre chaves {}.
+            <br><br>
+            No exemplo a seguir temos um &lth1>elemento que aponta para o nome do id “myHeader”. Este &lth1> elemento
+            será estilizado de acordo com a #myHeader definição de estilo na seção head:
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <b>&lthead></b><br>
+                <b>&ltstyle> <br>
+                    #myHeader {<br>
+                    background-color: lightblue;<br>
+                    color: black;<br>
+                    padding: 40px;<br>
+                    text-align: center;<br>
+                    }<br>
+                    &lt/style></b><br>
+                <b>&lt/head></b><br>
+                <br>
+                <b>&ltbody></b><br>
+                <br>
+                <b>&lth1 </b>id="myHeader">My Header<b>&lt/h1></b><br>
+                <br>
+                <b>&lt/body></b><br>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <h1 id="myHeader">My Header</h1>
+            </div>
+        </div>
+        <h1>Diferença entre classe e ID</h1>
+        <p>Um nome de classe pode ser usado por vários elementos HTML, enquanto um nome de id deve ser usado apenas por
+            um elemento HTML dentro da página:</p>
+        <br>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <b>&ltstyle> <br>
+                    <br>
+                    #myHeader {<br>
+                    background-color: lightblue;<br>
+                    color: black;<br>
+                    padding: 40px;<br>
+                    text-align: center;<br>
+                    }<br>
+                    <br>
+                    <br>
+                    .city {<br>
+                    background-color: tomato;<br>
+                    color: white;<br>
+                    padding: 10px;<br>
+                    }<br>
+                    &lt/style></b><br>
+                <br>
+                <br>
+                <b>&lth1 id="myHeader"></b>My Cities<b>&lt/h1></b><br>
+                <br>
+                <br>
+                <b>&lth2 class="city"></b>London<b>&lt/h2></b><br>
+                <b>&ltp></b>London is the capital of England.<b>&lt/p></b><br>
+                <br>
+                <b>&lth2 class="city"></b>Paris<b>&lt/h2></b><br>
+                <b>&ltp></b>Paris is the capital of France.<b>&lt/p></b><br>
+                <br>
+                <b>&lth2 class="city"></b>Tokyo<b>&lt/h2></b><br>
+                <b>&ltp></b>Tokyo is the capital of Japan.<b>&lt/p></b>
+
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+
+                <h1 id="myHeader">My Cities</h1>
+
+                <h2 class="city">London</h2>
+                <p>London is the capital of England.</p>
+
+                <h2 class="city">Paris</h2>
+                <p>Paris is the capital of France.</p>
+
+                <h2 class="city">Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <footer>
+            Este site é apenas informacional, contendo apenas informações basicas sobre HTML.
+            <br>
+            Todas as informações deste site foram tiradas do site <a href="https://www.w3schools.com">W3 Schools</a>.
+        </footer>
+    </div>
+</body>
+
+</html>
