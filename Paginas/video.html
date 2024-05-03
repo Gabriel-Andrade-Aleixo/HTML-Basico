@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICO</title>
+    <link rel="stylesheet" href="./Paginas/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://bs.googleapis.com">
+    <link rel="preconnect" href="https://bs.gstatic.com" crossorigin>
+    <link href="https://bs.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="div1">
+        <h1>Vídeo HTML</h1>
+        <p>
+            O elemento HTML &ltvideo>é usado para mostrar um vídeo em uma página da web.
+        </p><br>
+        <div class="divex">
+            <div class="divex">
+                <video width="400" controls>
+                    <source src="./style/img/mov_bbb.mp4" type="video/mp4">
+                    <source src="./style/img/mov_bbb.mp4" type="video/ogg">
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+        </div>
+        <h1>O elemento HTML &ltvídeo></h1>
+        <p>Para mostrar um vídeo em HTML, use o &ltvideo>elemento:</p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <b>&ltvideo width="320" height="240" controls> <br>
+                    &ltsource src="movie.mp4" type="video/mp4"><br>
+                    &ltsource src="movie.ogg" type="video/ogg"></b><br>
+                Your browser does not support the video tag.<br>
+                <b> &lt/video></b>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <video width="320" height="240" controls>
+                    <source src="./style/img/movie.mp4" type="video/mp4">
+                    <source src="./style/img/movie.mp4" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <h1>Como funciona</h1>
+        <p>
+            O controlsatributo adiciona controles de vídeo, como reproduzir, pausar e volume.
+            <br><br>
+            É uma boa ideia sempre incluir widthatributos height. Se a altura e a largura não estiverem definidas, a
+            página poderá piscar enquanto o vídeo é carregado.
+            <br><br>
+            O &ltsource>elemento permite que você especifique arquivos de vídeo alternativos que o navegador pode
+            escolher. O navegador usará o primeiro formato reconhecido.
+            <br><br>
+            O texto entre as tags &ltvideo>e &lt/video>só será exibido em navegadores que não suportam o
+            &ltvideo>elemento.
+        </p>
+        <br>
+        <hr><br>
+        <h1>HTML &ltvídeo> Reprodução automática</h1>
+        <p>Para iniciar um vídeo automaticamente, use o autoplayatributo:</p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <b>
+                    &ltvideo width="320" height="240" autoplay> <br>
+                    &ltsource src="movie.mp4" type="video/mp4"><br>
+                    &ltsource src="movie.ogg" type="video/ogg"><br>
+                    &lt/video>
+                </b>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <video width="320" height="240" muted autoplay>
+                    <source src="./style/img/movie.mp4" type="video/mp4">
+                    <source src="./style/img/movie.mp4" type="video/ogg">
+                </video>
+            </div>
+        </div>
+        <p>Adicione muteddepois autoplaypara permitir que seu vídeo comece a ser reproduzido automaticamente (mas sem som):</p>
+    </div>
+    <div class="main">
+        <footer>
+            Este site é apenas informacional, contendo apenas informações basicas sobre HTML.
+            <br>
+            Todas as informações deste site foram tiradas do site <a href="https://www.w3schools.com">W3
+                Schools</a>.
+        </footer>
+    </div>
+</body>
+
+</html>

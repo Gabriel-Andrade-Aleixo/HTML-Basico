@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICO</title>
+    <link rel="stylesheet" href="./Paginas/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://bs.googleapis.com">
+    <link rel="preconnect" href="https://bs.gstatic.com" crossorigin>
+    <link href="https://bs.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="div1">
+        <h1>Os elementos HTML &ltform></h1>
+        <p>
+            O elemento HTML &ltform>pode conter um ou mais dos seguintes elementos de formulário:
+        </p>
+        <ul>
+            <li>&ltinput></li>
+            <li>&ltlabel></li>
+            <li>&ltselect></li>
+            <li>&lttextarea></li>
+            <li>&ltbutton></li>
+            <li>&ltfieldset></li>
+            <li>&ltlegend></li>
+            <li>&ltdatalist></li>
+            <li>&ltoutput></li>
+            <li>&ltoption></li>
+            <li>&ltoptgroup></li>
+        </ul>
+        <br>
+        <hr><br>
+        <h1>O elemento &ltentrada></h1>
+        <p>Um dos elementos de formulário mais utilizados é o &ltinput>elemento.
+            <br><br>
+            O &ltinput>elemento pode ser exibido de diversas maneiras, dependendo do type atributo.
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>&ltlabel for="fname"></b>First name: <b>&lt/label></b><br>
+                    <b>&ltinput type="text" id="fname" name="fname"></b>
+                </p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname">
+            </div>
+        </div>
+        <h1>O elemento &ltrótulo></h1>
+        <p>
+            O &ltlabel>elemento define um rótulo para vários elementos do formulário.
+            <br><br>
+            O &ltlabel>elemento é útil para usuários de leitores de tela, porque o leitor de tela lerá o rótulo em voz
+            alta quando o usuário focar no elemento de entrada.
+            <br><br>
+            O &ltlabel>elemento também ajuda usuários que têm dificuldade em clicar em regiões muito pequenas (como
+            botões de opção ou caixas de seleção) - porque quando o usuário clica no texto dentro do &ltlabel>elemento,
+            ele alterna o botão de opção/caixa de seleção.
+            <br><br>
+            O foratributo da &ltlabel>tag deve ser igual ao idatributo do &ltinput> elemento para uni-los.
+        </p>
+        <br>
+        <hr><br>
+        <h1>O elemento &ltselect></h1>
+        <p>O &ltselect>elemento define uma lista suspensa:</p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>&ltlabel for="cars">Choose a car:&lt/label> <br>
+                        &ltselect id="cars" name="cars"></b><br>
+                    <b>&ltoption value="volvo"></b>Volvo<b>&lt/option></b><br>
+                    <b>&ltoption value="saab"></b>Saab<b>&lt/option></b><br>
+                    <b>&ltoption value="fiat"></b>Fiat<b>&lt/option></b><br>
+                    <b>&ltoption value="audi"></b>Audi<b>&lt/option></b><br>
+                    <b>&lt/select></b>
+                </p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <label for="cars">Choose a car:</label>
+                <select id="cars" name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+        </div>
+        <p>O &ltoption>elemento define uma opção que pode ser selecionada.
+            <br><br>
+            Por padrão, o primeiro item da lista suspensa é selecionado.
+            <br><br>
+            Para definir uma opção pré-selecionada, adicione o selectedatributo à opção:
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>&ltoption value="fiat" selected></b>Fiat <b>&lt/option></b>
+                </p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <form action="/action_page.php">
+                    <label for="cars">Choose a car:</label>
+                    <select id="cars" name="cars">
+                      <option value="volvo">Volvo</option>
+                      <option value="saab">Saab</option>
+                      <option value="fiat" selected>Fiat</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    <input type="submit">
+                  </form>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <footer>
+            Este site é apenas informacional, contendo apenas informações basicas sobre HTML.
+            <br>
+            Todas as informações deste site foram tiradas do site <a href="https://www.w3schools.com">W3
+                Schools</a>.
+        </footer>
+    </div>
+</body>
+
+</html>

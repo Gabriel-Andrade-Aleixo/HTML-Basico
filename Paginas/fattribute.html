@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICO</title>
+    <link rel="stylesheet" href="./Paginas/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://bs.googleapis.com">
+    <link rel="preconnect" href="https://bs.gstatic.com" crossorigin>
+    <link href="https://bs.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="div1">
+        <h1>O atributo de ação</h1>
+        <p>
+            O actionatributo define a ação a ser executada quando o formulário for enviado.
+            <br><br>
+            Normalmente, os dados do formulário são enviados para um arquivo no servidor quando o usuário clica no botão
+            enviar.
+            <br><br>
+            No exemplo abaixo, os dados do formulário são enviados para um arquivo chamado “action_page.php”. Este
+            arquivo contém um script do lado do servidor que trata os dados do formulário:
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <p>Ao enviar, envie os dados do formulário para "action_page.php":</p>
+            <div class="divex">
+                <p>
+                    <b>&ltform action="/action_page.php"><br>
+                        &ltlabel for="fname">First name:&lt/label>&ltbr><br>
+                        &ltinput type="text" id="fname" name="fname" value="John">&ltbr><br>
+                        &ltlabel for="lname">Last name:&lt/label>&ltbr><br>
+                        &ltinput type="text" id="lname" name="lname" value="Doe">&ltbr>&ltbr><br>
+                        &ltinput type="submit" value="Submit"><br>
+                        &lt/form></b><br>
+                </p>
+            </div>
+            <div class="divex">
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <h1>O atributo alvo</h1>
+        <p>
+            O targetatributo especifica onde exibir a resposta recebida após o envio do formulário.
+        </p><br>
+        <p>
+            O valor padrão _selfsignifica que a resposta será aberta na janela atual.
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <p>Aqui, o resultado enviado será aberto em uma nova aba do navegador:</p>
+            <div class="divex">
+                <p><b>&ltform action="/action_page.php" target="_blank"></form></b></p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <form action="/action_page.php" target="_blank">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <h1>O Atributo Método</h1>
+        <p>O methodatributo especifica o método HTTP a ser usado ao enviar os dados do formulário.
+            <br><br>
+            Os dados do formulário podem ser enviados como variáveis ​​​​de URL (com method="get") ou como
+            pós-transação HTTP (com method="post").
+            <br><br>
+            O método HTTP padrão ao enviar dados de formulário é GET.
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <p>Este exemplo usa o método GET ao enviar os dados do formulário:</p>
+            <div class="divex">
+                <p><b>&ltform action="/action_page.php" method="get"></form></b></p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <form action="/action_page.php" target="_blank" method="post">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <footer>
+            Este site é apenas informacional, contendo apenas informações basicas sobre HTML.
+            <br>
+            Todas as informações deste site foram tiradas do site <a href="https://www.w3schools.com">W3
+                Schools</a>.
+        </footer>
+    </div>
+</body>
+
+</html>

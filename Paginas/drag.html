@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICO</title>
+    <link rel="stylesheet" href="./Paginas/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://bs.googleapis.com">
+    <link rel="preconnect" href="https://bs.gstatic.com" crossorigin>
+    <link href="https://bs.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    #div50 {
+        width: 350px;
+        height: 70px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+    }
+
+    #div1,
+    #div2 {
+        float: left;
+        width: 100px;
+        height: 35px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+</style>
+<script>
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+</script>
+
+<body>
+    <div class="div1">
+        <h1>API de arrastar e soltar HTML</h1>
+        <p>
+            Em HTML, qualquer elemento pode ser arrastado e solto.
+        </p><br>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="./style/img/img_w3slogo.gif" draggable="true" ondragstart="drag(event)" id="drag1"
+                        width="88" height="31">
+                </div>
+
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <p>Arraste a imagem W3Schools para o retângulo.</p>
+        </div>
+        <h1>Arrastar e soltar</h1>
+        <p>
+            Arrastar e soltar é um recurso muito comum. É quando você “pega” um objeto e o arrasta para um local
+            diferente.
+        </p>
+        <br>
+        <hr><br>
+        <h1>Exemplo de arrastar e soltar HTML</h1>
+        <p>O exemplo abaixo é um exemplo simples de arrastar e soltar:</p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>
+                        <b>
+                            &ltscript> <br>
+                            function allowDrop(ev) {<br>
+                            ev.preventDefault();<br>
+                            }<br>
+                            <br>
+                            function drag(ev) {<br>
+                            ev.dataTransfer.setData("text", ev.target.id);<br>
+                            }<br>
+                            <br>
+                            function drop(ev) {<br>
+                            ev.preventDefault();<br>
+                            var data = ev.dataTransfer.getData("text");<br>
+                            ev.target.appendChild(document.getElementById(data));<br>
+                            }<br>
+                            &lt/script><br>
+                            &lt/head><br>
+                            &ltbody><br>
+                            <br>
+                            &ltdiv id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">&lt/div><br>
+                            <br>
+                            &ltimg id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336"
+                            height="69"><br>
+                        </b>
+                    </b>
+                </p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <p>Drag the W3Schools image into the rectangle:</p>
+
+                <div id="div50" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <br>
+                <img id="drag1" src="./style/img/img_w3slogo.gif" draggable="true" ondragstart="drag(event)" width="336"
+                    height="69">
+            </div>
+        </div>
+        <h1>O que arrastar - ondragstart e setData()</h1>
+        <p>Em seguida, especifique o que deve acontecer quando o elemento for arrastado.
+<br><br>
+            No exemplo acima, o ondragstartatributo chama uma função, drag(event), que especifica quais dados serão
+            arrastados.</p>
+    </div>
+    <div class="main">
+        <footer>
+            Este site é apenas informacional, contendo apenas informações basicas sobre HTML.
+            <br>
+            Todas as informações deste site foram tiradas do site <a href="https://www.w3schools.com">W3
+                Schools</a>.
+        </footer>
+    </div>
+</body>
+
+</html>

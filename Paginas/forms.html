@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICO</title>
+    <link rel="stylesheet" href="./Paginas/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://bs.googleapis.com">
+    <link rel="preconnect" href="https://bs.gstatic.com" crossorigin>
+    <link href="https://bs.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="div1">
+        <h1>Formulários HTML</h1>
+        <p>
+            Um formulário HTML é usado para coletar a entrada do usuário. A entrada do usuário é geralmente enviada a um
+            servidor para processamento.
+        </p>
+        <div class="divex">
+            <div class="divex">
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <h1>O elemento &ltform></h1>
+        <p>
+            O elemento HTML &ltform>é usado para criar um formulário HTML para entrada do usuário:
+        </p>
+        <div class="divex">
+            <div class="divex">
+                <b> &ltform></b> <br>
+                . <br>
+                form elements <br>
+                . <br>
+                <b>&lt/form></b>
+            </div>
+        </div>
+        <p>O &ltform>elemento é um contêiner para diferentes tipos de elementos de entrada, como: campos de texto,
+            caixas de seleção, botões de opção, botões de envio, etc.
+            <br><br>
+            Todos os diferentes elementos do formulário são abordados neste capítulo: Elementos do formulário HTML .
+        </p>
+        <br>
+        <hr><br>
+        <h1>O elemento &ltinput></h1>
+        <p>O elemento HTML &ltinput>é o elemento de formulário mais usado.
+            <br><br>
+            Um &ltinput>elemento pode ser exibido de várias maneiras, dependendo do type atributo.
+        </p>
+        <br>
+        <hr><br>
+        <h1>Campos de texto</h1>
+        <p>Define &ltinput type="text">um campo de entrada de linha única para entrada de texto
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <p>Um formulário com campos de entrada para texto:</p>
+            <div class="divex">
+                <p>
+                    <b>&ltform></b><br>
+                    <b>&ltlabel for="fname"></b>First name:<b>&lt/label></b><b>&ltbr></b><br>
+                    <b>&ltinput type="text" id="fname" name="fname"></b><b>&ltbr></b><br>
+                    <b>&ltlabel for="lname"></b>Last name:<b>&lt/label></b><b>&ltbr></b><br>
+                    <b>&ltinput type="text" id="lname" name="lname"></b>
+                    <b>&lt/form></b>
+                </p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <form>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                </form>
+            </div>
+        </div>
+        <h1>Botões do rádio</h1>
+        <p>
+            O &ltinput type="radio">define um botão de opção.
+            <br><br>
+            Os botões de opção permitem que um usuário selecione UMA dentre um número limitado de opções.
+        </p>
+        <div class="divex">
+            <h2>Exemplo:</h2>
+            <p>Um formulário com botões de opção:</p>
+            <div class="divex">
+                <p>
+                    <b>&ltp></b>Choose your favorite Web language: <b>&lt/p></b><br>
+                    <br>
+                    <b>&ltform></b><br>
+                    <b>&ltinput type="radio" id="html" name="fav_language" value="HTML"><br>
+                        &ltlabel for="html">HTML&lt/label>&ltbr><br>
+                        &ltinput type="radio" id="css" name="fav_language" value="CSS"><br>
+                        &ltlabel for="css">CSS&lt/label>&ltbr><br>
+                        &ltinput type="radio" id="javascript" name="fav_language" value="JavaScript"></b><br>
+                    <b>&ltlabel for="javascript"></b>JavaScript <b>&lt/label></b><br>
+                    <b>&lt/form></b><br>
+                </p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <p>Choose your favorite Web language:</p>
+
+                <form>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label><br>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                </form>
+            </div>
+        </div>
+        <div class="main">
+            <footer>
+                Este site é apenas informacional, contendo apenas informações basicas sobre HTML.
+                <br>
+                Todas as informações deste site foram tiradas do site <a href="https://www.w3schools.com">W3
+                    Schools</a>.
+            </footer>
+        </div>
+</body>
+
+</html>

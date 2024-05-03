@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICO</title>
+    <link rel="stylesheet" href="./Paginas/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://bs.googleapis.com">
+    <link rel="preconnect" href="https://bs.gstatic.com" crossorigin>
+    <link href="https://bs.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="div1">
+        <h1>SVG (gráficos vetoriais escaláveis)</h1>
+        <p>
+            <a href="https://www.w3schools.com/graphics/svg_intro.asp">SVG define gráficos baseados em vetores em
+                XML</a> , que podem ser incorporados diretamente em páginas HTML.
+        </p><br>
+        <hr><br>
+        <h1>O elemento &ltsvg></h1>
+        <p>
+            O elemento HTML &ltsvg>é um contêiner para gráficos SVG.
+
+            SVG possui vários métodos para desenhar caminhos, retângulos, círculos, polígonos, texto e muito mais.
+        </p>
+        <div class="divex">
+            <h1>Círculo SVG:</h1>
+            <div class="divex">
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                </svg>
+            </div>
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>
+                        &ltsvg width="100" height="100"><br>
+                        &ltcircle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /> <br>
+                        &lt/svg>
+                    </b>
+                </p>
+            </div>
+            <br>
+            <hr><br>
+            <h1>Retângulo SVG:</h1>
+            <div class="divex">
+                <svg width="400" height="120">
+                    <rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue" />
+                </svg>
+            </div>
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>
+                        &ltsvg width="400" height="120"> <br>
+                        &ltrect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue" /> <br>
+                        &lt/svg>
+                    </b>
+                </p>
+            </div>
+            <br>
+            <hr><br>
+            <h1>Retângulo SVG com opacidade e cantos arredondados:</h1>
+            <div class="divex">
+                <svg width="400" height="180">
+                    <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+                        style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+                </svg>
+            </div>
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>
+                        &ltsvg width="400" height="180"><br>
+                        &ltrect x="50" y="20" rx="20" ry="20" width="150" height="150"<br>
+                        style="fill:red;stroke:black;stroke-width:5;opacity:0.5" /> <br>
+                        &lt/svg> <br>
+                    </b>
+                </p>
+            </div>
+            <br>
+            <hr><br>
+            <h1>Estrela SVG:</h1>
+            <div class="divex">
+                <svg width="300" height="200">
+                    <polygon points="100,10 40,198 190,78 10,78 160,198"
+                        style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+                </svg>
+            </div>
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>
+                        &ltsvg width="300" height="200"><br>
+                        &ltpolygon points="100,10 40,198 190,78 10,78 160,198"<br>
+                        style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" /> <br>
+                        &lt/svg>
+                    </b>
+                </p>
+            </div>
+            <br>
+            <hr><br>
+            <h1>Elipse e texto gradiente SVG:</h1>
+            <div class="divex">
+                <svg height="130" width="500">
+                    <defs>
+                        <linearGradient id="grad1">
+                            <stop offset="0%" stop-color="yellow" />
+                            <stop offset="100%" stop-color="red" />
+                        </linearGradient>
+                    </defs>
+                    <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                    <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>
+            <h2>Exemplo:</h2>
+            <div class="divex">
+                <p>
+                    <b>
+                        &ltsvg height="130" width="500"><br>
+                        &ltdefs><br>
+                        &ltlinearGradient id="grad1"><br>
+                        &ltstop offset="0%" stop-color="yellow" /><br>
+                        &ltstop offset="100%" stop-color="red" /><br>
+                        &lt/linearGradient><br>
+                        &lt/defs><br>
+                        &ltellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" /><br>
+                        &lttext fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG&lt/text><br>
+                        Sorry, your browser does not support inline SVG.<br>
+                        &lt/svg>
+                    </b>
+                </p>
+            </div>
+            <h1>Diferenças entre SVG e Canvas</h1>
+            <p>
+                SVG é uma linguagem para descrever gráficos 2D em XML, enquanto o Canvas desenha gráficos 2D
+                dinamicamente (com JavaScript).
+                <br><br>
+                SVG é baseado em XML, o que significa que todos os elementos estão disponíveis no SVG DOM. Você pode
+                anexar manipuladores de eventos JavaScript a gráficos SVG.
+                <br><br>
+                No SVG, cada forma desenhada é lembrada como um objeto. Se os atributos de um objeto SVG forem
+                alterados, o navegador poderá renderizar novamente a forma automaticamente.
+                <br><br>
+                A tela é renderizada pixel por pixel. No canvas, uma vez desenhado o gráfico, ele é esquecido pelo
+                navegador. Se a sua posição for alterada, toda a cena precisa ser redesenhada, incluindo quaisquer
+                objetos que possam ter sido cobertos pelo gráfico.
+            </p>
+        </div>
+    </div>
+    <div class="main">
+        <footer>
+            Este site é apenas informacional, contendo apenas informações basicas sobre HTML.
+            <br>
+            Todas as informações deste site foram tiradas do site <a href="https://www.w3schools.com">W3
+                Schools</a>.
+        </footer>
+    </div>
+</body>
+
+</html>

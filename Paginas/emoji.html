@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICO</title>
+    <link rel="stylesheet" href="./Paginas/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://bs.googleapis.com">
+    <link rel="preconnect" href="https://bs.gstatic.com" crossorigin>
+    <link href="https://bs.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="div1">
+        <h1>O que são emojis?</h1>
+        <p>Emojis parecem imagens ou ícones, mas não são.
+            <br><br>
+            São letras (caracteres) do conjunto de caracteres UTF-8 (Unicode).
+        </p>
+        <br>
+        <hr><br>
+        <h1>O atributo HTML charset</h1>
+        <p>Para exibir uma página HTML corretamente, um navegador da Web deve conhecer o conjunto de caracteres usado na
+            página.
+            <br><br>
+            Isso é especificado na &ltmeta>tag:
+        </p>
+        <div class="divex">
+            <div class="divex">
+                <b>&ltmeta charset="UTF-8"></b>
+            </div>
+        </div>
+        <h1>Caracteres UTF-8</h1>
+        <p>Muitos caracteres UTF-8 não podem ser digitados em um teclado, mas sempre podem ser exibidos usando números
+            (chamados de números de entidade):</p>
+        <ul>
+            <li>A é 65</li>
+            <li>B é 66</li>
+            <li>C é 67</li>
+        </ul>
+        <div class="divex">
+            <h2>Exemplo</h2>
+            <div class="divex">
+                <p>
+                    <b>&lt!DOCTYPE html></b><br>
+                    <b>&lthtml></b><br>
+                    <b>&ltmeta charset="UTF-8"></b><br>
+                    <b>&ltbody></b><br>
+                    <br>
+                    <b>&lth1></b>My First Emoji<b>&lt/h1></b><br>
+                    <br>
+                    <b>&ltp></b>&#128512;<b>&lt/p></b><br>
+                    <br>
+                    <b>&lt/body></b><br>
+                    <b>&lt/html></b>
+                </p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <p>I will display A B C</p>
+                <p>I will display &#65; &#66; &#67;</p>
+            </div>
+        </div>
+        <h3>Exemplo explicado</h3>
+        O &ltmeta charset="UTF-8">elemento define o conjunto de caracteres.
+        <br><br>
+        Os caracteres A, B e C são exibidos pelos números 65, 66 e 67.
+        <br><br>
+        Para que o navegador entenda que você está exibindo um caractere, você deve iniciar o número da entidade com e
+        terminar com ; (ponto e vírgula).
+        <br>
+        <hr><br>
+        <h1>Personagens emojis</h1>
+        <p>Emojis também são caracteres do alfabeto UTF-8:</p>
+        <ul>
+            <li>😄 é 128516</li>
+            <li>😍 é 128525</li>
+            <li>😍 é 128525</li>
+        </ul>
+        <div class="divex">
+            <h2>Exemplo</h2>
+            <div class="divex">
+                <p>
+                    <b>&lt!DOCTYPE html></b><br>
+                    <b>&lthtml></b><br>
+                    <b>&ltmeta charset="UTF-8"></b><br>
+                    <b>&ltbody></b><br>
+                    <br>
+                    <b>&ltp></b>I will display A B C<b>&lt/p></b><br>
+                    <b>&ltp></b>I will display & #65; & #66; & #67;<b>&lt/p></b><br>
+                    <br>
+                    <b>&lt/body></b><br>
+                    <b>&lt/html></b>
+                </p>
+            </div>
+            <h2>Execução:</h2>
+            <div class="divex">
+                <h1>My First Emoji</h1>
+
+                <p>&#128512;</p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <footer>
+            Este site é apenas informacional, contendo apenas informações basicas sobre HTML.
+            <br>
+            Todas as informações deste site foram tiradas do site <a href="https://www.w3schools.com">W3 Schools</a>.
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICO</title>
+    <link rel="stylesheet" href="./Paginas/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://bs.googleapis.com">
+    <link rel="preconnect" href="https://bs.gstatic.com" crossorigin>
+    <link href="https://bs.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="div1">
+        <h1>Codificação HTML (conjuntos de caracteres)</h1>
+        <p>Para exibir uma página HTML corretamente, um navegador da Web deve saber qual conjunto de caracteres usar.
+        </p>
+        <br>
+        <hr><br>
+        <h1>O atributo HTML charset</h1>
+        <p>O conjunto de caracteres é especificado na &ltmeta>tag:
+            <br><br>
+            Isso é especificado na &ltmeta>tag:
+        </p>
+        <div class="divex">
+            <div class="divex">
+                <b>&ltmeta charset="UTF-8"></b>
+            </div>
+        </div>
+        <p>A especificação HTML5 incentiva os desenvolvedores web a usar o conjunto de caracteres UTF-8.
+            <br><br>
+            UTF-8 cobre quase todos os caracteres e símbolos do mundo!
+        </p>
+        <br>
+        <hr><br>
+        <h1>O conjunto de caracteres ASCII</h1>
+        <p>ASCII foi o primeiro padrão de codificação de caracteres para a web. Definiu 128 caracteres diferentes que
+            poderiam ser usados ​​na internet:</p>
+        <ul>
+            <li>Letras inglesas (AZ)</li>
+            <li>Números (0-9)</li>
+            <li>Caracteres especiais como ! $ + - ( ) @ &lt >.</li>
+        </ul>
+        <br>
+        <hr><br>
+        <h1>O conjunto de caracteres ANSI</h1>
+        <p>ANSI (Windows-1252) era o conjunto de caracteres original do Windows:</p>
+        <ul>
+            <li>Idêntico ao ASCII para os primeiros 127 caracteres</li>
+            <li>Caracteres especiais de 128 a 159</li>
+            <li>Idêntico ao UTF-8 de 160 a 255</li>
+        </ul>
+        <div class="divex">
+            <div class="divex">
+                <b>&ltmeta charset="Windows-1252"></b>
+            </div>
+        </div>
+        <h1>O conjunto de caracteres ISO-8859-1</h1>
+        <p>ISO-8859-1 era o conjunto de caracteres padrão para HTML 4. Este conjunto de caracteres suportava 256 códigos de caracteres diferentes. HTML 4 também suporta UTF-8.</p>
+        <ul>
+            <li>Idêntico ao ASCII para os primeiros 127 caracteres</li>
+            <li>Caracteres especiais de 128 a 159</li>
+            <li>Idêntico ao UTF-8 de 160 a 255</li>
+        </ul>
+        <div class="divex">
+            <h2>Exemplo de HTML 4:</h2>
+            <div class="divex">
+                <b>&ltmeta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"></b>
+            </div>
+            <h2>Exemplo de HTML 5:</h2>
+            <div class="divex">
+                <b>&ltmeta charset="ISO-8859-1"></b>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <footer>
+            Este site é apenas informacional, contendo apenas informações basicas sobre HTML.
+            <br>
+            Todas as informações deste site foram tiradas do site <a href="https://www.w3schools.com">W3 Schools</a>.
+        </footer>
+    </div>
+</body>
+
+</html>
